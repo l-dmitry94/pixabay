@@ -17,7 +17,7 @@ let lightbox = new SimpleLightbox('.gallery__card-link', {
 
 let options = {
     root: null,
-    rootMargin: '200px',
+    rootMargin: '200px',  
     threshold: 1.0,
 };
 
