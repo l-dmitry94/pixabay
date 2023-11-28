@@ -23,16 +23,19 @@
         height: 45px;
         border: none;
         border-radius: 8px;
-        outline: 2px solid black;
+        outline: 2px solid transparent;
         padding: 0 20px;
 
         &:focus {
-            box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.8);
+            box-shadow: 0 0 0 2px#4b23dfcc;
         }
     }
 
     &__search-button {
         position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: center;
         border-radius: 8px;
         right: 0;
         top: 0;
@@ -43,8 +46,8 @@
     }
 
     &__search-icon {
-        width: 24px;
-        height: 24px;
+        width: 16px;
+        height: 16px;
     }
 }
 
@@ -67,7 +70,7 @@ main {
     margin-bottom: 40px;
 
     &__card {
-        flex-basis: calc((100% - 48px) / 3);
+        flex-basis: calc((100% - 72px) / 4);
     }
 
     &__card-img {
